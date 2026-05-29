@@ -230,9 +230,17 @@ const ProjectDetails = () => {
             <div className="grid lg:grid-cols-2 gap-8 md:gap-16">
               <div className="space-y-6 md:space-y-10 animate-slideInLeft">
                 <div className="space-y-4 md:space-y-6">
-                  <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent leading-tight">
-                    {project.Title}
-                  </h1>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent leading-tight">
+                      {project.Title}
+                    </h1>
+                    {project.Status && (
+                      <span className="px-3 py-1 rounded-full text-xs md:text-sm font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30 flex items-center gap-1.5 self-center animate-pulse">
+                        <span className="w-2 h-2 rounded-full bg-amber-400"></span>
+                        {project.Status}
+                      </span>
+                    )}
+                  </div>
                   <div className="relative h-1 w-16 md:w-24">
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse" />
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-sm" />

@@ -200,7 +200,7 @@ const AboutPage = () => {
               data-aos-duration="1000"
             >
               <span className="text-pink-600">
-                Halo, saya adalah
+                Halo, saya
               </span>
               <span 
                 className="block mt-2 text-pink-600"

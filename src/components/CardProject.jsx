@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { toSlug } from "../utils/slug";
 
-const CardProject = ({ Img, Title, Description, Link: ProjectLink, id, Github, Type }) => {
+const CardProject = ({ Img, Title, Description, Link: ProjectLink, id, Github, Type, Status }) => {
   const handleDetails = (e) => {
     if (!id) {
       console.log("ID kosong");
@@ -31,15 +31,23 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id, Github, T
               <h3 className="text-xl font-semibold text-pink-600 flex-1">
                 {Title}
               </h3>
-              {Type && (
-                <span className={`whitespace-nowrap px-3 py-1 rounded-full text-xs font-medium ${
-                  Type === "Proyek Pribadi"
-                    ? "bg-purple-100 text-purple-700"
-                    : "bg-blue-100 text-blue-700"
-                }`}>
-                  {Type}
-                </span>
-              )}
+              <div className="flex flex-col sm:flex-row items-end sm:items-center gap-1.5">
+                {Status && (
+                  <span className="whitespace-nowrap px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-amber-100 text-amber-800 border border-amber-200 flex items-center gap-1 animate-pulse">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                    {Status}
+                  </span>
+                )}
+                {Type && (
+                  <span className={`whitespace-nowrap px-3 py-1 rounded-full text-xs font-medium ${
+                    Type === "Proyek Pribadi"
+                      ? "bg-purple-100 text-purple-700"
+                      : "bg-blue-100 text-blue-700"
+                  }`}>
+                    {Type}
+                  </span>
+                )}
+              </div>
             </div>
 
             <p className="text-slate-700/90 text-sm leading-relaxed line-clamp-2">

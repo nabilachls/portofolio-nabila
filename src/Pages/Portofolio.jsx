@@ -141,13 +141,9 @@ export default function FullWidthTabs() {
     setProjects(projectsData);
     localStorage.setItem("projects", JSON.stringify(projectsData));
 
-    const cachedCertificates = localStorage.getItem("certificates");
-    if (cachedCertificates) {
-      setCertificates(JSON.parse(cachedCertificates));
-    } else {
-      setCertificates(certificatesData);
-      localStorage.setItem("certificates", JSON.stringify(certificatesData));
-    }
+    // Selalu update cache sertifikat statis agar link Google Drive yang baru selalu termuat
+    setCertificates(certificatesData);
+    localStorage.setItem("certificates", JSON.stringify(certificatesData));
   }, []);
 
   useEffect(() => {
@@ -298,6 +294,7 @@ export default function FullWidthTabs() {
                       id={project.id}
                       Type={project.Type}
                       Github={project.Github}
+                      Status={project.Status}
                     />
                   </div>
                 ))}
@@ -331,17 +328,22 @@ export default function FullWidthTabs() {
                       {certificate.Img ? (
                         <Certificate ImgSertif={certificate.Img} />
                       ) : (
-                        <div className="relative bg-white/95 backdrop-blur-lg rounded-2xl p-6 border border-gray-200 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 group h-full flex flex-col justify-between min-h-[220px]">
+                        <a
+                          href={certificate.Link || "#"}
+                          target={certificate.Link ? "_blank" : undefined}
+                          rel={certificate.Link ? "noopener noreferrer" : undefined}
+                          className="relative block bg-white/95 backdrop-blur-lg rounded-2xl p-6 border border-gray-200 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 group h-full flex flex-col justify-between min-h-[220px]"
+                        >
                           <div className="absolute -top-3 right-4 w-12 h-12 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] p-2 flex items-center justify-center shadow-lg">
                             <Award className="w-6 h-6 text-white" />
                           </div>
                           <div className="mt-6 flex-1 flex flex-col justify-between">
                             <div className="space-y-2">
-                              <h3 className="text-lg font-bold text-gray-900 group-hover:text-pink-600 transition-colors">
+                              <h3 className="text-lg font-bold text-gray-900 group-hover:text-pink-600 transition-colors text-left">
                                 {displayTitle}
                               </h3>
                               {displayIssuer && (
-                                <p className="text-sm text-purple-600 font-semibold">
+                                <p className="text-sm text-purple-600 font-semibold text-left">
                                   {displayIssuer}
                                 </p>
                               )}
@@ -352,7 +354,7 @@ export default function FullWidthTabs() {
                               </span>
                             </div>
                           </div>
-                        </div>
+                        </a>
                       )}
                     </div>
                   );

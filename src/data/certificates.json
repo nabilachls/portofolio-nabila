@@ -2,16 +2,19 @@
   {
     "id": 1,
     "title": "Cisco C++ Essentials 1 - Cisco Networking Academy",
-    "year": 2026
+    "year": 2026,
+    "Link": "https://drive.google.com/file/d/1lo2QQ0D_4RDh97WUeM94r4FQW1Jc1oUX/view?usp=sharing"
   },
   {
     "id": 2,
     "title": "Peserta Seminar Nasional Electrical Engineering In Action - EEA Unila",
-    "year": 2025
+    "year": 2025,
+    "Link": "https://drive.google.com/file/d/1CFV6NdILumnti_Hd0cXb7v6P6laXsjTR/view?usp=sharing"
   },
   {
     "id": 3,
     "title": "Peserta Literasi Digital Nasional - Kementrian Komunikasi dan Informasi",
-    "year": 2021
+    "year": 2021,
+    "Link": "https://drive.google.com/file/d/1xYEM_w0wSZRmY31eK0B7SOMvlRECpYEJ/view?usp=sharing"
   }
 ]

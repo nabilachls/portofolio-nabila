@@ -7,6 +7,7 @@
     "Link": "",
     "Github": "https://github.com/nabilachls/bookify",
     "Type": "Proyek Akademik",
+    "Status": "Ongoing",
     "TechStack": ["Laravel", "MySQL", "HTML", "CSS", "JavaScript"],
     "Features": ["Manajemen koleksi buku", "Pencatatan data buku", "Sistem database MySQL", "Interface pengguna responsif", "Fitur pencarian dan filter"]
   },
@@ -18,6 +19,7 @@
     "Link": "",
     "Github": "https://github.com/nabilachls/smart-clothesline",
     "Type": "Proyek Akademik",
+    "Status": "Ongoing",
     "TechStack": ["Arduino", "IoT", "Sensor Kelembaban", "Python", "HTML"],
     "Features": ["Sensor kelembaban otomatis", "Monitoring real-time", "Kontrol pengeringan", "Sistem pemberitahuan", "Dashboard monitoring"]
   },

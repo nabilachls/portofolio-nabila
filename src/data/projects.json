@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "Img": "/project_bookify.png",
+    "Title": "Bookify",
+    "Description": "Aplikasi manajemen buku sederhana berbasis Laravel dan MySQL untuk pencatatan dan pengelolaan koleksi buku.",
+    "Link": "",
+    "Github": "https://github.com/nabilachls/bookify",
+    "Type": "Proyek Akademik",
+    "TechStack": ["Laravel", "MySQL", "HTML", "CSS", "JavaScript"],
+    "Features": ["Manajemen koleksi buku", "Pencatatan data buku", "Sistem database MySQL", "Interface pengguna responsif", "Fitur pencarian dan filter"]
+  },
+  {
+    "id": 2,
+    "Img": "/project_smart_clothesline.png",
+    "Title": "Smart Clothesline",
+    "Description": "Proyek IoT untuk pemantauan dan kontrol pengeringan pakaian secara otomatis menggunakan sensor kelembaban.",
+    "Link": "",
+    "Github": "https://github.com/nabilachls/smart-clothesline",
+    "Type": "Proyek Akademik",
+    "TechStack": ["Arduino", "IoT", "Sensor Kelembaban", "Python", "HTML"],
+    "Features": ["Sensor kelembaban otomatis", "Monitoring real-time", "Kontrol pengeringan", "Sistem pemberitahuan", "Dashboard monitoring"]
+  },
+  {
+    "id": 3,
+    "Img": "/project_praktikum.png",
+    "Title": "Sistem Pemantauan Praktikum",
+    "Description": "Sistem monitoring praktikum berbasis MySQL untuk pencatatan, pelaporan, dan manajemen data praktikum mahasiswa.",
+    "Link": "",
+    "Github": "https://github.com/nabilachls/sistem-pemantauan-praktikum",
+    "Type": "Proyek Akademik",
+    "TechStack": ["MySQL", "PHP", "HTML", "CSS", "JavaScript"],
+    "Features": ["Pencatatan data praktikum", "Sistem pelaporan", "Manajemen data mahasiswa", "Laporan berbasis database", "Keamanan data"]
+  },
+  {
+    "id": 4,
+    "Img": "/project_kiyay.png",
+    "Title": "Kiyay GoldFish",
+    "Description": "Website toko berbasis WordPress untuk Kiyay GoldFish dengan sistem katalog produk dan informasi penjualan.",
+    "Link": "",
+    "Github": "https://github.com/nabilachls/kiyay-goldfish",
+    "Type": "Proyek Akademik",
+    "TechStack": ["WordPress", "PHP", "MySQL", "CSS", "JavaScript"],
+    "Features": ["Katalog produk dinamis", "Sistem informasi penjualan", "Plugin e-commerce", "Manajemen konten", "Responsive design"]
+  },
+  {
+    "id": 5,
+    "Img": "/project_portfolio.png",
+    "Title": "Portfolio Nabila",
+    "Description": "Website portfolio pribadi yang menampilkan profil, proyek, sertifikasi, dan pengalaman dalam pengembangan web.",
+    "Link": "https://nabilachls.com",
+    "Github": "https://github.com/nabilachls/portfolio",
+    "Type": "Proyek Pribadi",
+    "TechStack": ["React", "Tailwind CSS", "Vite", "JavaScript", "Supabase"],
+    "Features": ["Portfolio showcase", "Project gallery", "Certification display", "Contact form", "Admin dashboard", "SEO optimized"]
+  }
+]

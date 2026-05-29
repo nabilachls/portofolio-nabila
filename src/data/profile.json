@@ -1,0 +1,56 @@
+{
+  "name": "Nabila Alya Chalisa",
+  "phone": "+62 821-8540-4794",
+  "linkedin": "https://www.linkedin.com/in/nabila-alya-chalisa-74bbb632a/",
+  "githubUsername": "nabilachls",
+  "github": "https://github.com/nabilachls",
+  "summary": "Saya telah menempuh perkuliahan selama 4 semester dengan fokus pada bidang pemrograman, struktur data, basis data, rekayasa perangkat lunak, dan sistem operasi. Memiliki pemahaman dalam pengembangan aplikasi berbasis web. Aktif mengembangkan kemampuan teknis melalui praktikum dan proyek perkuliahan.",
+  "education": [
+    {
+      "institution": "Universitas Lampung",
+      "degree": "S1 - Teknik Informatika",
+      "period": "2024 - Sekarang",
+      "location": "Bandar Lampung",
+      "details": [
+        "IPK: 3.90 / 4.00",
+        "Mempelajari pemrograman, struktur data, basis data, sistem operasi, dan rekayasa perangkat lunak.",
+        "Mengembangkan kemampuan pembuatan aplikasi dan sistem informasi berbasis web melalui proyek perkuliahan."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Visitasi Perusahaan Himatro Unila",
+      "role": "Koordinator Kesekretariatan",
+      "year": "2025",
+      "details": [
+        "Pada Program Kerja Visper sebagai Koordinator Kesekretariatan, saya mengelola 50 surat dan dokumen resmi kegiatan.",
+        "Memimpin 10 anggota, mengatur pendataan peserta, absensi, dan administrasi kegiatan secara terstruktur."
+      ]
+    },
+    {
+      "title": "Engineering Career Expo BEM FT Unila",
+      "role": "Koordinator Kesekretariatan",
+      "year": "2026",
+      "details": [
+        "Mengatur alur administrasi kegiatan dan kelengkapan dokumen kepanitiaan.",
+        "Menyusun serta memastikan distribusi informasi dan dokumen kegiatan berjalan efektif dan tepat waktu."
+      ]
+    }
+  ],
+  "skills": {
+    "soft": ["Komunikasi","Kerja sama tim","Manajemen waktu","Adaptasi","Problem solving","Kepemimpinan"],
+    "hard": ["HTML","CSS","JavaScript","PHP & Laravel Dasar","MySQL","UI/UX Design","Microsoft Office","Cisco Packet Tracer","Pemrograman C++ & Python"]
+  },
+  "projects": [
+    {"title":"Bookify","tech":"Laravel, MySQL","year":"2026","github":"https://github.com/nabilachls/bookify"},
+    {"title":"Smart Clothesline","tech":"IoT","year":"2026","github":"https://github.com/nabilachls/smart-clothesline"},
+    {"title":"Sistem Pemantauan Praktikum","tech":"MySQL","year":"2026","github":"https://github.com/nabilachls/sistem-pemantauan-praktikum"},
+    {"title":"Kiyay GoldFish","tech":"WordPress","year":"2025","github":"https://github.com/nabilachls/kiyay-goldfish"}
+  ],
+  "certificates": [
+    "Cisco C++ Essentials 1 - Cisco Networking Academy",
+    "Peserta Seminar Nasional Electrical Engineering In Action - EEA Unila",
+    "Peserta Literasi Digital Nasional - Kementrian Komunikasi dan Informasi"
+  ]
+}

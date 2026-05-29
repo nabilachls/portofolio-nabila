@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Basic -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/Photo.JPG" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'"
+  >
+
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    >
+  </noscript>
+
+  <!-- SEO -->
+  <title>Nabila Alya Chalisa | Informatics Engineering Student</title>
+
+  <meta
+    name="description"
+    content="Website resmi Nabila Alya Chalisa, mahasiswa Teknik Informatika Universitas Lampung yang memiliki minat pada pengembangan web, UI/UX design, dan teknologi digital."
+  />
+
+  <meta
+    name="keywords"
+    content="Nabila Alya Chalisa, Nabila, Nabila Chalisa, Teknik Informatika, Universitas Lampung, Portfolio Nabila, Web Developer, UI UX Designer"
+  />
+
+  <meta name="author" content="Nabila Alya Chalisa" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#030014" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nabilachls.github.io/" />
+  <meta property="og:title" content="Nabila Alya Chalisa | Informatics Engineering Student" />
+  <meta
+    property="og:description"
+    content="Website resmi dan portofolio Nabila Alya Chalisa, mahasiswa Teknik Informatika Universitas Lampung."
+  />
+  <meta property="og:image" content="/Photo.JPG" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://nabilachls.github.io/" />
+  <meta name="twitter:title" content="Nabila Alya Chalisa | Informatics Engineering Student" />
+  <meta
+    name="twitter:description"
+    content="Website resmi dan portofolio Nabila Alya Chalisa."
+  />
+  <meta name="twitter:image" content="/Photo.JPG" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://nabilachls.github.io/" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nabila Alya Chalisa",
+    "url": "https://nabilachls.github.io/",
+    "image": "/Photo.JPG",
+    "jobTitle": "Informatics Engineering Student",
+    "description": "Mahasiswa Teknik Informatika Universitas Lampung yang memiliki minat pada pengembangan web, UI/UX design, dan teknologi digital.",
+    "sameAs": [
+      "https://github.com/nabilachls"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Hidden SEO Content -->
+  <header style="display:none">
+    <h1>Nabila Alya Chalisa</h1>
+    <p>
+      Mahasiswa Teknik Informatika Universitas Lampung yang memiliki minat
+      pada pengembangan web, UI/UX design, dan teknologi digital.
+    </p>
+  </header>
+
+  <!-- Root React -->
+  <div id="root"></div>
+
+  <!-- Debug Helper -->
+  <script>
+    (function(){
+      window.__captureLogs = [];
+
+      const push = (t, msg) =>
+        window.__captureLogs.push({
+          t,
+          msg,
+          stack: (new Error()).stack
+        });
+
+      const originalError = console.error.bind(console);
+
+      console.error = function(...args){
+        push('error', args);
+        originalError(...args);
+      };
+
+      const originalWarn = console.warn.bind(console);
+
+      console.warn = function(...args){
+        push('warn', args);
+        originalWarn(...args);
+      };
+
+      window.addEventListener('error', e =>
+        push('error-event', {
+          message: e.message,
+          filename: e.filename,
+          lineno: e.lineno
+        })
+      );
+
+      window.addEventListener('unhandledrejection', e =>
+        push('unhandledrejection', e.reason)
+      );
+
+      setTimeout(() => {
+        try {
+          const root = document.getElementById('root');
+
+          window.__captureSnapshot = {
+            rootChildren: root ? root.children.length : null,
+            html: document.documentElement.outerHTML.slice(0, 2000)
+          };
+        } catch(e) {
+          push('snapshot-error', String(e));
+        }
+      }, 1500);
+    })();
+  </script>
+
+  <script type="module" src="/src/main.jsx"></script>
+
+</body>
+</html>
